@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义样式 */
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+table {
+  @apply w-full;
+}
+
+th, td {
+  @apply px-4 py-2 border border-gray-300;
+}
+
+th {
+  @apply bg-gray-200 font-bold;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-100;
+}

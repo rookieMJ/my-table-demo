@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定义样式 */
+body {
+  @apply bg-gray-100 text-gray-800;
+}
+
+table {
+  @apply w-full;
+}
+
+th, td {
+  @apply px-4 py-2 border border-gray-300;
+}
+
+th {
+  @apply bg-gray-200 font-bold cursor-pointer;
+}
+
+tr:nth-child(even) {
+  @apply bg-gray-100;
+}
+
+/* 固定列 */
+.table-fixed-left .fixed-col-left {
+  position: sticky;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.table-fixed-right .fixed-col-right {
+  position: sticky;
+  right: 0;
+  background-color: white;
+  z-index: 1;
+}
